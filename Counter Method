@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Counter
+{
+    public static void countingByThree()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        int number = 0;
+        
+        while (number != 18) 
+        {
+            number = number + 3;
+            System.out.println(number);
+        }
+    }
+}

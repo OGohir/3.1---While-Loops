@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Pie {
+    public static void askPie()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        String flavour = "strawberry";
+        
+        while (!flavour.equals("apple") && !flavour.equals("blueberry") && !flavour.equals("pumpkin"))
+        {
+            System.out.println("choose different flavour!");
+            flavour = input.nextLine();
+        }
+        System.out.println("Coming right up");
+    }
+}

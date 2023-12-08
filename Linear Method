@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Linear 
+{
+    public static void linear()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        int number = 2;
+        while (number != 32) 
+        {
+            number = number + 5;
+            System.out.println(number);
+        }
+    }
+}

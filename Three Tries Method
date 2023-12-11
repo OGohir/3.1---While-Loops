@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ThreeTries
+{
+    public static void threeTries()
+    {
+        
+        int maxAttempts = 3;
+        int attempts = 0;
+        int password = 12345;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Password: ");
+
+        password = input.nextInt();
+        
+        if (password == 12345)
+        {
+            System.out.println("Correct!");
+        }
+        
+        while (password != 12345 && attempts < maxAttempts)
+        {
+            System.out.println("You have 2 tries left");
+            password = input.nextInt();
+            
+            while (attempts < maxAttempts)
+            {
+                System.out.println("You have 1 try left");
+                password = input.nextInt();
+                
+                break;
+            }
+            break;     
+        }
+                
+        System.out.println("Correct!"); 
+    }
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Doubling 
+{
+    public static void doublingSquared()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        int number = 1;
+        
+        while (number != 64) 
+        {
+            number = number * 2;
+            System.out.println(number);
+        }
+    }
+}
